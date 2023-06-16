@@ -1,0 +1,24 @@
+<PID_Controller>:
+    MDLabel:
+        text: root.pid_controller
+        font_style: 'H1'
+        halign: 'center'
+
+    MDRaisedButton:
+        text: root.button_string
+        size_hint_x: 0.8
+        pos_hint: {'center_x': 1/2, 'center_y': 1/9}
+        on_release: root.click()
+
+
+MDBoxLayout:
+    orientation: 'vertical'
+
+    MDTopAppBar:
+        title: 'Controlador PID de Tanque'
+        left_action_items: [['menu']]
+
+    PID_Controller
+
+
+
